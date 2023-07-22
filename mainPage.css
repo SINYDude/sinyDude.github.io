@@ -1,0 +1,126 @@
+
+/*
+body {
+  place-content: center;
+  min-height: 100vh;
+}*/
+:root{
+  --experance-background:
+}
+.main-grid {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+
+  padding-block: 2rem;
+  width: min(75%, 90rem);
+  margin-inline: auto;
+
+  /*background-color:red;*/
+}
+
+.main-head {
+    grid-column: 1 /6;
+
+    background-color: darkblue;
+
+    height: 30rem;
+    background-image: url(assets/Heading_plain.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    /*margin-top: -2rem;*/
+}
+
+.face-image {
+position: relative;
+float: left;
+
+width: 15rem;
+ height: 15rem;
+ left: -60px;
+ top: -20px;
+
+background-image: url(assets/SelfPhoto5.png);
+
+background-size: cover;
+background-repeat: no-repeat;
+border-radius:70%;
+background-color: black;
+border-color: gray;
+border-style:groove;
+
+z-index: 10;
+}
+
+.other-image {
+position: relative;
+  width: 15rem;
+ height: 20rem;
+  
+  float: right ;
+ 
+  /*bottom: 1rem;*/
+  right: 2rem;
+
+  background-image: url(assets/MacysPhoto01.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+  z-index: 0;
+}
+
+
+
+.heading-main {
+    position: relative;
+/*float: inline-start;*/
+
+    color: white;
+
+    width: 45rem;
+
+    top: 11rem;
+    left: rem;
+
+    z-index: 15;
+}
+.spacer-bar {
+  position: relative;
+  
+
+  grid-column: span;
+  grid-column: 1 / span 5;
+  height: .2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  font-weight:bold;
+  color: lightgray;
+  font-size: 3rem;
+  text-shadow: 2px 2px #020202;
+}
+.spacer-heading {
+  margin: .5rem 0rem 0rem 1rem;
+  background-color: black;
+  width: fit-content;
+  font-weight:bold;
+  color: lightgray;
+  font-size: 3rem;
+  text-shadow: 2px 2px #020202;
+
+}
+.experience {
+  /*font-size: var(--fs-400);*/
+  padding: 2rem;
+  border-radius: 0.5rem;
+  /*box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(217 19% 35%) / 0.25);*/
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  /*margin-left: 1rem;*/
+
+  background-color: whitesmoke;
+}
