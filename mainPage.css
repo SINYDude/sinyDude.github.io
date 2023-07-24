@@ -19,13 +19,19 @@ body {
   /*background-color:red;*/
 }
 
+/* utilities */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 .main-head {
     grid-column: 1 /6;
 
     background-color: darkblue;
 
     height: 30rem;
-    background-image: url(assets/BG-30669-8-abstract-transparent-image.png);
+    background-image: url(assets/Heading_plain.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -33,40 +39,40 @@ body {
 }
 
 .face-image {
-position: relative;
-float: left;
+  position: relative;
+  float: left;
 
-width: 15rem;
- height: 15rem;
- left: -60px;
- top: -20px;
+  width: 15rem;
+  height: 15rem;
+  left: -60px;
+  top: -20px;
 
-background-image: url(assets/SelfPhoto5.png);
+  background-image: url(assets/SelfPhoto5.png);
 
-background-size: cover;
-background-repeat: no-repeat;
-border-radius:70%;
-background-color: black;
-border-color: gray;
-border-style:groove;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius:70%;
+  background-color: black;
+  border-color: gray;
+  border-style:groove;
 
-z-index: 10;
+  z-index: 10;
 }
 
 .other-image {
 position: relative;
   width: 15rem;
  height: 20rem;
-  
+
   float: right ;
- 
+
   /*bottom: 1rem;*/
   right: 2rem;
 
   background-image: url(assets/MacysPhoto01.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
+
   z-index: 0;
 }
 
@@ -87,11 +93,11 @@ position: relative;
 }
 .spacer-bar {
   position: relative;
-  
+
 
   grid-column: span;
   grid-column: 1 / span 5;
-  height: .2rem;
+  height: 0rem;
   background-color: rgba(0, 0, 0, 0.5);
 
   font-weight:bold;
@@ -102,25 +108,100 @@ position: relative;
 .spacer-heading {
   margin: .5rem 0rem 0rem 1rem;
   background-color: black;
-  width: fit-content;
+  /*width: fit-content;*/
   font-weight:bold;
   color: lightgray;
   font-size: 3rem;
-  text-shadow: 2px 2px #020202;
+  /*text-shadow: 2px 2px #020202;*/
+
+  border-left: solid;
+  border-left-color: gray;
+
+border-bottom: solid;
+  border-bottom-color: white;
+
+  text-align: center;
 
 }
+
+.experience-left{
+  grid-column: 1;
+  background-color: white;
+}
+
+.experience-right{
+  grid-column: 5;
+  background-color: white;
+}
+
+.experience-left-w{
+  grid-column: 1;
+  background-color: white;
+}
+
+.experience-right-w{
+  grid-column: 5;
+  background-color: white;
+}
+
 .experience {
-  /*font-size: var(--fs-400);*/
+
   padding: 2rem;
   border-radius: 0.5rem;
-  /*box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(217 19% 35%) / 0.25);*/
 
   grid-column-start: 2;
   grid-column-end: 5;
 
   margin-bottom: .5rem;
   margin-top: .5rem;
-  /*margin-left: 1rem;*/
+
 
   background-color: whitesmoke;
+   height:40rem;
+}
+
+.experience.position {
+  /*
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  */
+  line-height: 1;
+}
+
+.experience.company {
+  /*
+  font-size: var(--fs-300);
+  */
+  /* opacity: 0.5; */
+}
+
+.experience.timeframe {
+  /*
+  font-size: var(--fs-400);
+  */
+  /* opacity: 0.5; */
+}
+
+.experience.jobsymbol_1 {
+  background-image: url("./assets/shopping.svg");
+  background-repeat: no-repeat;
+  background-position: top right 5%;
+  background-size: 10%;
+  background-position-y: 20%;
+
+.footer {
+  grid-column: 1 / span 5;
+  background-color: red;
+
+  height: 5rem;
+
+}
+
+@media (min-width: 600px) {
+  .other-image{
+    display: none;
+    height: 100rem;
+    opacity: 10%;
+    background-color: yellow;
+  }
 }
