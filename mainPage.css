@@ -197,7 +197,7 @@ border-bottom: solid;
 
 }
 
-@media only screen (max-width: 600px) {
+@media only screen (max-width: 200px) {
   .other-image{
     display: none;
     height: 100rem;
