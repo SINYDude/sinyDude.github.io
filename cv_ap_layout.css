@@ -1,0 +1,70 @@
+body {
+    place-content: center;
+    min-height: 100vh;
+}
+
+:root{
+    /*--experance-background:;*/
+  
+    --color-basewhite: #f8f8f8;
+    --color-basedark-one: #4a525a;
+    --color-basedark-two: #ff8552;
+    --color-basedark-three: #72a1e5;
+    --color-basedark-four: #768948;
+}
+    
+/* utilities */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+  
+  
+.main-grid {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+    
+    /*padding-block: 2rem;*/
+    width: min(90%, 90rem);
+      
+    margin-inline: auto;
+    z-index: 0;
+}
+
+.sidebar-left {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    background-color: var(--color-basedark-three);
+    
+
+}
+
+.top-bar {
+    position: relative;
+    grid-column: 2 / 6;
+    background-color: var(--color-basedark-two);
+   /* height: 10vh;*/
+}
+
+
+.description {
+    grid-column: 2 / 6;
+    background-color: var(--color-basedark-one);
+
+    height: 30vh;
+} 
+
+.work-canvas {
+    grid-column: 2 /6;
+    background-color: var(--color-basewhite);
+
+    height: 50vh;
+}
+
+.footer {
+    grid-column: 1 /6;
+    background-color: var(--color-basedark-four);
+
+    height: 3rem;
+}

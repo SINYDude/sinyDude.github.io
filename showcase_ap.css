@@ -12,10 +12,11 @@ body {
   gap: 0px;
   grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
 
-  padding-block: 2rem;
-  width: min(75%, 90rem);
+  /*padding-block: 2rem;*/
+  width: min(90%, 90rem);
   margin-inline: auto;
-
+  
+  
   /*background-color:red;*/
 }
 
@@ -44,9 +45,9 @@ body {
 
   width: 15rem;
   height: 15rem;
-  left: -60px;
-  top: -20px;
-
+  /*left: -60px;
+  top: -20px;*/
+  transform:rotate(-4deg);
   background-image: url(assets/profilePic.jpg);
 
   background-size: 100% 100%;
