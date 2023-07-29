@@ -46,8 +46,8 @@ body {
     transform:rotate(-4deg);
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 20%;
+    width: 80%;
+    height: 150px;
 
     background-image: url(/assets/profilePic.jpg);
     background-size: 100% 100%;
