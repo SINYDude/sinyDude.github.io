@@ -37,6 +37,27 @@ body {
     grid-row: 1 / 4;
     background-color: var(--color-basedark-three);
     
+    width: 10rem;
+}
+
+.sidebar-profile-photo {
+    display: block;
+    
+    transform:rotate(-4deg);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 20%;
+
+    background-image: url(/assets/profilePic.jpg);
+    background-size: 100% 100%;
+        
+    background-repeat: no-repeat;
+    border-radius:15%;
+    background-color: var(--color-basewhite);
+    border-color:var(--color-basedark-one);
+    border-style:ridge;
+    border-width: 5px;
 
 }
 
@@ -59,7 +80,22 @@ body {
     grid-column: 2 /6;
     background-color: var(--color-basewhite);
 
-    height: 50vh;
+   /* height: 50vh;*/
+}
+
+.canvas-board {
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.card {
+    background-color: var(--color-basedark-four);
+    /*: 30%;*/
+    margin: 70px;
+    text-align: center;
+    line-height: 300%;
+    font-size: 30px;   
 }
 
 .footer {
