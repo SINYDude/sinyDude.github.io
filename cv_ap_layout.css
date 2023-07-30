@@ -132,13 +132,51 @@ select {
 }
 
 .card {
-    background-color: var(--color-basedark-four);
+    background-color: var(--color-basewhite);
     /*: 30%;*/
     margin: 70px;
-    text-align: center;
-    line-height: 300%;
-    font-size: 30px;   
+    /*text-align: center;*/
+    line-height: 35px;
+    width: 400px;
+    font-size: 20px;   
 }
+
+.experience {
+ 
+    background-color: whitesmoke;
+    
+}
+  
+.experience.position {
+    /*
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    */
+    line-height: 1;
+}
+  
+  .experience.company {
+    /*
+    font-size: var(--fs-300);
+    */
+    /* opacity: 0.5; */
+}
+  
+  .experience.timeframe {
+    /*
+    font-size: var(--fs-400);
+    */
+    /* opacity: 0.5; */
+  }
+  
+  /*.experience.jobsymbol_1 {
+    background-image: url("./assets/shopping.svg");
+    background-repeat: no-repeat;
+    background-position: top right 5%;
+    background-size: 10%;
+    background-position-y: 20%;
+  }
+  */
 
 .footer {
     grid-column: 1 /6;

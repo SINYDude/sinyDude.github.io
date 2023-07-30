@@ -84,53 +84,55 @@ select {
 }
 
 .mid-top {
-  position: relative;
-  z-index: -1;
+  display: flex;  
+  justify-content:center;
+
+
   grid-column: 1 /4;
+  
   background-color: var(--color-basedark-one);
+  
   height: 45vh;
 
   border-style: solid;
-  border-right-width: .1rem;
-  border-bottom-width: .1rem;
-  border-left-width: .1rem;
-  border-top-width: .0rem;
+  border-right-width: .rem;
+  border-bottom-width: .0rem;
+  border-left-width: .0rem;
+  border-top-width: .2rem;
   z-index: 1;
 }
 
 .greet-one {
   display: block;
   position: relative;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  margin-top: auto;
-  margin-bottom: auto;
-  /*z-index: 10;*/
+    
 
-  width: 25rem;
+  align-self: center;
+  text-align: right;
+  
+  
 }
+
+.main-img-container {
+    width:10rem;
+    height: ;
+    align-self: flex-end;
+    
+}
+
 .main-img{
   display: block;
-  position: relative;
-  bottom: -55%;
- 
-  height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
+   
   width: 10rem;
   opacity: 100%;
  }
 
  .greet-two {
-    display: block;
-    position: relative;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    margin-top: auto;
-    margin-bottom: auto;
-    /*z-index: 10;*/
-
-    width: 25rem;
+    
+    
+    text-align: center;
+    align-self: center;
+    
 }
  
 
