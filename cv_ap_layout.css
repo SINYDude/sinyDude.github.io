@@ -138,7 +138,8 @@ select {
     /*text-align: center;*/
     line-height: 35px;
     width: 400px;
-    font-size: 20px;   
+    font-size: 20px;
+    padding: 15px;   
 }
 
 .experience {
