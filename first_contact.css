@@ -147,4 +147,8 @@ select {
   z-index: 0;
 }
 
+#file {
 
+  width: 250px;
+  height: 40px;
+}
