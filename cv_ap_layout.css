@@ -11,6 +11,20 @@ body {
     --color-basedark-two: #ff8552;
     --color-basedark-three: #72a1e5;
     --color-basedark-four: #768948;
+
+    --color-sidebar-base: #c7b198;
+    --color-sidebar-fade1: #DFD3C3;
+    --color-sidebar-fade2: #F0ECE3;
+    
+    --color-discription-base: #8B7E74;
+
+    --color-topbar-base: #596e79;
+
+    --color-canvas-base: #F3E9DD;
+    --color-canvas-card: #FDF6EC;
+
+
+
 }
 
 /* Remove default margin */
@@ -68,18 +82,36 @@ select {
     grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
     
     /*padding-block: 2rem;*/
-    width: min(90%, 90rem);
+    width: min(95%);
       
     margin-inline: auto;
+    margin-top: 5px;
     z-index: 0;
+    
 }
 
 .sidebar-left {
+    
     grid-column: 1;
     grid-row: 1 / 4;
-    background-color: var(--color-basedark-three);
+    background-color: var(--color-sidebar-base);
+    background-color: red;
+    background-image:
+      linear-gradient(
+        to right, 
+        var(--color-sidebar-base) 10%,
+        var(--color-sidebar-base) 15%,
+        var(--color-sidebar-fade1) 15%,
+        var(--color-sidebar-base) 100%,
+        var(--color-sidebar-base) 100%
+      );
+    margin-left: 5px;
+    width: 15rem;
     
-    width: 10rem;
+
+    border-radius: .5em .5em;
+
+    text-align: center;
 }
 
 .sidebar-profile-photo {
@@ -100,27 +132,31 @@ select {
     border-color:var(--color-basedark-one);
     border-style:ridge;
     border-width: 5px;
+    opacity: 100%;
 
 }
 
 .top-bar {
     position: relative;
     grid-column: 2 / 6;
-    background-color: var(--color-basedark-two);
+    background-color: var(--color-topbar-base);
    /* height: 10vh;*/
+   border-radius: .5em .5em;
 }
 
 
 .description {
     grid-column: 2 / 6;
-    background-color: var(--color-basedark-one);
+    background-color: var(--color-discription-base);
 
     height: 30vh;
+
+    border-radius: .5em .5em;
 } 
 
 .work-canvas {
     grid-column: 2 /6;
-    background-color: var(--color-basewhite);
+    background-color: var(--color-canvas-base);
 
    /* height: 50vh;*/
 }
@@ -128,18 +164,21 @@ select {
 .canvas-board {
     display: flex;
     flex-flow: wrap;
+    padding: 20px;
 
 }
 
 .card {
-    background-color: var(--color-basewhite);
+    background-color: var(--color-canvas-card);
     /*: 30%;*/
-    margin: 70px;
+    margin: 60px;
     /*text-align: center;*/
     line-height: 35px;
-    width: 400px;
-    font-size: 20px;
+    width: 300px;
+    font-size: 15px;
     padding: 15px;   
+
+    box-shadow: 10px 10px 8px 10px #888888;
 }
 
 .experience {
@@ -155,20 +194,22 @@ select {
     */
     line-height: 1;
 }
-  
+  /*
   .experience.company {
     /*
     font-size: var(--fs-300);
-    */
-    /* opacity: 0.5; */
+    
+     opacity: 0.5; 
 }
-  
+  */
+  /*
   .experience.timeframe {
-    /*
+    
     font-size: var(--fs-400);
-    */
-    /* opacity: 0.5; */
+    
+     opacity: 0.5; 
   }
+  */
   
   /*.experience.jobsymbol_1 {
     background-image: url("./assets/shopping.svg");
