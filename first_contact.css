@@ -12,7 +12,49 @@ body {
     --color-basedark-three: #72a1e5;
     --color-basedark-four: #768948;
   }
-  
+
+  /* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+
+/* body default */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+  /* A elements with no class default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /*fonts for input, buttons, ect. */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+    
   /* utilities */
   .flex {
     display: flex;
@@ -42,53 +84,55 @@ body {
 }
 
 .mid-top {
-  position: relative;
-  z-index: -1;
+  display: flex;  
+  justify-content:center;
+
+
   grid-column: 1 /4;
+  
   background-color: var(--color-basedark-one);
+  
   height: 45vh;
 
   border-style: solid;
-  border-right-width: .1rem;
-  border-bottom-width: .1rem;
-  border-left-width: .1rem;
-  border-top-width: .0rem;
+  border-right-width: .0rem;
+  border-bottom-width: .0rem;
+  border-left-width: .0rem;
+  border-top-width: .5rem;
   z-index: 1;
 }
 
 .greet-one {
   display: block;
   position: relative;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  margin-top: auto;
-  margin-bottom: auto;
-  /*z-index: 10;*/
+    
 
-  width: 25rem;
+  align-self: center;
+  text-align: right;
+  
+  
 }
+
+.main-img-container {
+    width:10rem;
+    /*height: ;*/
+    align-self: flex-end;
+    
+}
+
 .main-img{
   display: block;
-  position: relative;
-  bottom: -55%;
- 
-  height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
+   
   width: 10rem;
   opacity: 100%;
  }
 
  .greet-two {
-    display: block;
-    position: relative;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    margin-top: auto;
-    margin-bottom: auto;
-    /*z-index: 10;*/
-
-    width: 25rem;
+    
+    
+    text-align: center;
+    align-self: center;
+    
 }
  
 
@@ -97,11 +141,25 @@ body {
   background-color: var(--color-basewhite);
   height: 45vh;
   
-  border-style: solid;
-  border-right-width: .1rem;
-  border-bottom-width: .1rem;
-  border-left-width: .1rem;
-  border-top-width: .0rem;
+  border-style: none;
+  
+  
+  z-index: 0;
 }
 
+#file {
 
+  width: 20%;
+  height: 40px;
+  text-align: center;
+/*
+  left: -30px;
+  top: -5px;
+  */
+
+}
+
+progress:before {
+  content: 'YEARS ' ;
+
+}
