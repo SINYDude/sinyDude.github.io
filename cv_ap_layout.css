@@ -181,9 +181,7 @@ select {
 
     box-shadow: 10px 10px 8px 10px #888888;
 
-    height: 300px;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+   
 }
 
 
@@ -194,6 +192,10 @@ select {
     
     background-color: whitesmoke;
     border-radius: .5em .5em;
+
+    height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
      
 }
   
