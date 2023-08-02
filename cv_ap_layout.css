@@ -180,15 +180,21 @@ select {
     padding: 15px;   
 
     box-shadow: 10px 10px 8px 10px #888888;
+
+    height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 
 /*  rgba(245, 245, 245, 80%) */
 .experience {
- 
+
+    /*height: 20px;*/
+    
     background-color: whitesmoke;
     border-radius: .5em .5em;
-    
+     
 }
   
 .experience.position {
@@ -197,6 +203,10 @@ select {
     font-weight: var(--fw-400);
     */
     line-height: 1;
+}
+
+.experience.p {
+  
 }
   /*
   .experience.company {

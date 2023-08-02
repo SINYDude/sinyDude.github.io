@@ -63,13 +63,13 @@ body
 }
 .text
 {
-  font-size: 10px;
+  font-size: 20px;
   color: #000000;
-  font-weight: 600;
+  font-weight: 200;
   text-align: center;
   letter-spacing: 2px;
 }
-form
+#formtest
 {
   margin-top: 40px;
 }
@@ -77,8 +77,14 @@ label
 {
   display: block;
   margin-top: 30px;
+  font-size: .5px;
+  font-weight: 700;
+}
+
+p {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 20px;
+
 }
 input
 {
@@ -91,7 +97,7 @@ input
 
   margin-top: 8px;
 
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
 }
 ::placeholder
