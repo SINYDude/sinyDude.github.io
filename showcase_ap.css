@@ -23,7 +23,7 @@ body {
 /* utilities */
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap2, 1rem);
 }
 
 .main-head {

@@ -72,10 +72,14 @@ select {
 /* utilities */
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
-}
-  
-  
+    gap: .5em;
+}  
+
+.cardflex {
+  display: flex ;
+  flex-direction: column;
+  gap: .5em;
+} 
 .main-grid {
     display: grid;
     gap: 5px;
@@ -177,22 +181,26 @@ select {
     line-height: 35px;
     width: 300px;
     font-size: 15px;
-    padding: 15px;   
+    padding: 10px;   
 
     box-shadow: 10px 10px 8px 10px #888888;
 
-   
+    height: 350px;
+
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
 }
 
 /*  rgba(245, 245, 245, 80%) */
 .experience {
-
+    height: inherit;
     /*height: 20px;*/
     
     background-color: whitesmoke;
     border-radius: .5em .5em;
 
-    height: 300px;
+    
     overflow: hidden;
     text-overflow: ellipsis; 
      
