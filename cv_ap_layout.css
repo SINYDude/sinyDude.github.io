@@ -167,6 +167,7 @@ select {
    /* height: 50vh;*/
 }
 
+
 .canvas-board {
     display: flex;
     flex-flow: wrap;
@@ -193,6 +194,11 @@ select {
     overflow: hidden;
     text-overflow: ellipsis; 
     
+}
+
+
+.timeframe {
+  text-align: center;
 }
 
 /*  rgba(245, 245, 245, 80%) */
