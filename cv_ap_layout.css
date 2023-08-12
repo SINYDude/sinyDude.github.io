@@ -142,8 +142,12 @@ select {
 
 }
 
+nav {
+  grid-column: 2 / 6;
+}
 .top-bar {
-    position: relative;
+    
+    
     grid-column: 2 / 6;
     background-color: var(--color-topbar-base);
    /* height: 10vh;*/
